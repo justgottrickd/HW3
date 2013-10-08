@@ -8,6 +8,8 @@
 
   %body
     %h1.title Rotten Potatoes!
+    = button_to "Login/Sign Up", new_user_path, :class => "button", :method => :get 
+    <br />
     #main
       - if flash[:notice]
         #notice.message= flash[:notice]
